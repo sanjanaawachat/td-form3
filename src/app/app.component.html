@@ -34,7 +34,6 @@ Expected Salary [________________]
                 <div class="card-body">
                     <form #appform="ngForm">
 
-
                         <div class="form-group">
                             <label>Full Name*</label>
                             <input type="text" name="fullName" #fullName="ngModel" ngModel class="form-control"
@@ -66,11 +65,11 @@ Expected Salary [________________]
                                 pattern="^[0-9]{10}$">
 
                             <strong *ngIf="mobile.errors?.['required'] && mobile.touched" class="text-danger">
-                                Mobile Number is required
+                                Mobile Number is required...............
                             </strong>
 
                             <strong *ngIf="mobile.errors?.['pattern'] && mobile.touched" class="text-danger">
-                                Mobile Number must be exactly 10 digits
+                                Mobile Number must be exactly 10 digits.........
                             </strong>
                         </div>
 
